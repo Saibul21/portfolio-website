@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<style>
+    .clgname,.schname,.webd1{
+       
+        border-width: 40px;
+        color: azure;
+        border-color: cadetblue;
+        background-color: black;
+        border-radius: 50px;
+        display: inline-flex;
+        padding: 8px;
+        padding-left: 10px;
+        
+    }
+        .college,.school,.webd{
+            padding: 40px;
+            font-size: 20px;
+        }
+    
+</style>
+<body style="background-color:floralwhite">
+    <body class="body1">
+  <header class="header">
+    <h1 class="name">My Education</h1>
+    
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html" ><li class="light">Home</li></a>
+        <a href="skills.html" ><li class="light">Skills</li></a>
+        <a href="Education.html" ><li class="light">Education</li></a>
+        
+      </ul>
+      
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <center>
+    <div class="webd">
+    <h1 class="webd1">- Self Learning -</h1>
+    <h3>Web Development | Front-end Developer | Software developer</h3>
+    <a href="https://jmc.edu/" target="_blank"><h4>Online free resources</h4></a>
+    <h5>Home</h5>
+    </div>
+    
+    </center>
+    <hr>
+  <center>
+    <div class="college">
+    <h1 class="clgname">- College -</h1>
+    <h3>B.Sc Hotel management and catering science</h3>
+    <a href="https://jmc.edu/" target="_blank"><h4>Jamal Mohamed College</h4></a>
+    <h5>Trichy</h5>
+    </div>
+    
+    </center>
+
+    <hr>
+  <center>
+    <div class="school">
+    <h1 class="schname">- School -</h1>
+    <a href="https://muthialpetschools.com/" target="_blank"><h3>The Muthialpet higher secondary school</h3></a>
+    <h4>Mannady, Chennai</h4>
+    </div>
+    
+    
+    </center>
+  <script>
+      const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    </script>
+ 
+    
+</body>
+
+</html>

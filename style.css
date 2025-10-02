@@ -1,0 +1,230 @@
+/* -------- Base Styles -------- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.intro {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+span {
+  color: red;
+}
+
+h1, h2, h3 {
+  margin: 0 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* -------- Header -------- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: #000;
+  color: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.light:hover{
+  color: blue;
+}
+.name:hover {
+  color: red;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.nav-links li a {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+
+.nav-links li a:hover {
+  color: aqua;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* -------- Home Section -------- */
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  padding: 60px 10%;
+  flex-wrap: wrap;
+}
+
+.home-img {
+  flex: 1 1 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.home-img img {
+  max-width: 100%;
+  border-radius: 12px;
+}
+
+.home-content {
+  flex: 1 1 300px;
+  max-width: 500px;
+}
+
+.btn-group button {
+  font-family:'Times New Roman', Times, serif;
+  font-size: 16px;
+  background-color: cornflowerblue;
+  border: none;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-group button:hover {
+  color: antiquewhite;
+  background-color: #333;
+}
+
+/* -------- Contact Section -------- */
+.home-cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  color: antiquewhite;
+  padding: 20px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.lissti {
+  display: inline-block;
+  margin: 10px 20px;
+  font-size: 16px;
+}
+
+/* -------- Responsive Design -------- */
+
+@media (max-width: 1024px) {
+  .nav-links {
+    gap: 25px;
+  }
+}
+
+@media (max-width: 768px) {
+  .home {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 20px;
+  }
+
+  .home-content {
+    padding: 0;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    position: absolute;
+    top: 60px;
+    right: 10%;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  .home-img img {
+    max-width: 70%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    right: 5%;
+    width: 150px;
+  }
+
+  .home {
+    padding: 30px 15px;
+  }
+
+  .home-img img {
+    max-width: 90%;
+  }
+
+  .btn-group button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
+
+  .lissti {
+    display: block;
+    margin: 8px 0;
+  }
+}
+
+/*skills page section*/
+
+.skills{
+  background-color: #000;
+  color: #f9f9f9;
+  position: relative;
+  top: 30px;
+  text-align: center;
+ padding: 30px;
+ 
+}
+
+.listofski{
+  padding: 20px;
+  padding-top: 70px;
+  padding-left: 80px;
+  text-align: center;
+  
+  font-size: larger;
+  margin: 30px;
+  display: inline-block;
+  font-size: 30px;
+  }
+
+
+

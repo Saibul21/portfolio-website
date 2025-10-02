@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Portfolio Website</title>
+</head>
+
+<body class="body1">
+  <header class="header">
+    <h1 class="name" onclick="maatru()">My Portfolio</h1>
+    
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html" ><li class="light">Home</li></a>
+        <a href="skills.html"><li class="light">Skills</li></a>
+        <a href="Education.html" ><li class="light">Education</li></a>
+       
+      </ul>
+      
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+
+  <script>
+    function maatru(){
+      alert("Hello! Hope you doing well.")
+
+    }
+  </script>
+
+  <section class="home">
+    <div class="home-img">
+      <img src="Images/saibpng.png" alt="Profile Picture" />
+    </div>
+    <div class="home-content">
+      <h1 class="intro">Hi, It's <span>Saibul</span></h1>
+      <div id="change">
+        <h2 id="typing-text1">I am a web developer</h2>
+        <p id="typp1">
+          I’m a self-taught web developer who started by building random projects while following a structured roadmap. Over time, these experiments shaped my skills, and what you’re seeing here represents a part of my creative work.
+        </p>
+      </div>
+
+      <nav class="icos">
+        <a href="https://www.linkedin.com/in/saibul-islam-a32658180/" target="_blank"><img src="Images/linkedin.png" alt=""></a> 
+        <a href="https://github.com/Saibul21" target="_blank"><img src="Images/github.png" alt="" width="45px"></a>
+        <a href="https://www.youtube.com/@wanderlife_zayf" target="_blank"><img src="Images/Youtube.png" alt=""width="45px"></a>
+        <a href="https://www.instagram.com/saibu_z/" target="_blank"><img src="Images/instagram.png" alt=""width="45px"></a>
+      </nav> 
+
+      <div class="btn-group">
+        <button onclick="mathu1()">YouTuber</button>
+        <button onclick="mathu2()">Web Developer</button>
+        <button onclick="mathu3()">Content Writer</button>
+      </div>
+    </div>
+  </section>
+
+  <div class="home-cont">
+    <ul>
+      <li class="lissti">📞 7708919171</li>
+      <li class="lissti">📧 saibulsss@gmail.com</li>
+      <li class="lissti"><a href="Saibu Cv.pdf" download="Saibul_Resume.pdf" target="_blank" style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; color: brown;">Download Resume</a></li>
+    </ul>   
+  </div>
+
+  <script>
+    
+    const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+
+    var typ1 = document.getElementById("typing-text1");
+    var pp1 = document.getElementById("typp1");
+
+    function mathu1() {
+      typ1.textContent="I am a content creator";
+      pp1.textContent="I’m a vlogger, who loves making videos and documenting the world around me. Traveling is my passion, and I share my experiences through content in my native language on YouTube. Check out my channel!";
+    }
+    function mathu2() {
+      typ1.textContent="I am a web developer";
+      pp1.textContent="I’m a self-taught web developer who started by building random projects while following a structured roadmap. Over time, these experiments shaped my skills, and what you’re seeing here represents a part of my creative work.";
+    }
+    function mathu3() {
+      typ1.textContent="I am a content writer";
+      pp1.textContent="I am currently working as a content writer, focusing on creating attractive and engaging content. My goal is to simplify English for readers, making information clear, accessible, and enjoyable to understand across different topics.";
+    }
+  </script>
+</body>
+</html>

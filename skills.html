@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Skills</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <body class="body1" style="background-color:bisque">
+  <header class="header">
+    <h1 class="name" onclick="maatru()">My Skills</h1>
+    
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <a href="index.html" ><li class="light">Home</li></a>
+        <a href="skills.html" ><li class="light">Skills</li></a>
+        <a href="Education.html" ><li class="light">Education</li></a>
+        
+      </ul>
+      
+      <div class="menu-toggle" id="menuToggle">&#9776;</div>
+    </nav>
+  </header>
+  <script>
+    function maatru(){
+      alert("Kindly, Check out my skills.")
+
+    }
+  </script>
+    <center>
+    <ul class="listofski">
+        <li>Content writing</li>
+        <li>Oxygen XML editor</li>
+        <li>Microsoft Excel</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Fundamentals of Python</li>
+        <li>Adobe premiere pro</li>
+        <li>Adobe photoshop</li>
+        <li>Microsoft powerpoint</li>
+        <li>Git & GitHub</li>
+        <li>Visual studio code</li>
+        <li>Canva designing</li>
+        <li>Basics of digital marketing</li>
+    </ul>
+    
+    </center>
+    </div>
+    <script>
+      const menuToggle = document.getElementById("menuToggle");
+    const navLinks = document.getElementById("navLinks");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    </script>
+    
+</body>
+
+</html>
